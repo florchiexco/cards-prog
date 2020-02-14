@@ -1,4 +1,5 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
 export default class CardU extends React.Component{
     constructor(props){
@@ -11,14 +12,13 @@ export default class CardU extends React.Component{
         const {cardIMG, cardTitle, cardDescription}= this.props.lenguaje;
         return (
             <>
-                <div className="card">
-                    <img src={cardIMG} className="card-img-top" alt="..."/>
-                    <div className="card-body">
-                        <h5 className="card-title">{cardTitle}</h5>
-                        <p className="card-text">{cardDescription}</p>
-                        <a href="#" className="btn btn-dark">Ver más</a>
-                    </div>
-                </div>
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={cardIMG} />
+                <Card.Body>
+                    <Card.Title>{cardTitle}</Card.Title>
+                    <Card.Text>{cardDescription}</Card.Text>
+                </Card.Body>
+                </Card>
             </>
         );
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import CardU from "./components/CardU.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
 
 export default class App extends React.Component {
   constructor(){
