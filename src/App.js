@@ -24,9 +24,11 @@ export default class App extends React.Component {
     const {lenguajes}= this.state;
     return (
             <>
-            {lenguajes && lenguajes.map((lenguaje, key)=>(
-              <CardU lenguaje={ lenguaje } key={key} />
-            ))}
+              <div className="container">
+                {lenguajes && lenguajes.map((lenguaje, key)=>(
+                  <CardU lenguaje={ lenguaje } key={key} />
+                ))}
+              </div>
             </>
           );
         }
